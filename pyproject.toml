@@ -1,0 +1,21 @@
+[project]
+name = "student-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "john sygounas", email = "352531262+giansygkounas-source@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+]
+
+[project.scripts]
+student-analysis = "student_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
